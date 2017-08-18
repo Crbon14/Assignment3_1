@@ -1,0 +1,138 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time 
+domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and 
+a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then 
+separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a 
+corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and 
+tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, 
+tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, 
+fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+Complete List of Features:
+==========================
+"Activity" : Acivity for which data is recorder. Over 6 different activity the data is  recorded wiz. WALKING
+ WALKING_UPSTAIRS
+ WALKING_DOWNSTAIRS
+ SITTING STANDING
+ LAYING
+
+"Subject_identifier" : Subject on which data is recorded
+"tBodyAccmeanX" : Time Average of Body acceleration mean per subject per activity in X direction
+"tBodyAccmeanY" : Time Average of Body acceleration mean per subject per activity in Y direction
+"tBodyAccmeanZ" : Time Average of Body acceleration mean per subject per activity in Z direction
+"tGravityAccmeanX" : Time Average of gravitational acceleration mean per subject per activity in X direction
+"tGravityAccmeanY" : Time Average of gravitational acceleration mean per subject per activity in Y direction
+"tGravityAccmeanZ" : Time Average of gravitational acceleration mean per subject per activity in Z direction
+"tBodyAccJerkmeanX" : Time Average of Body acceleration jerk mean per subject per activity in X direction
+"tBodyAccJerkmeanY" : Time Average of Body acceleration jerk mean per subject per activity in Y direction
+"tBodyAccJerkmeanZ" : Time Average of Body acceleration jerk mean per subject per activity in Z direction
+"tBodyGyromeanX" : Time Average of Body gyroscopic accelaration mean per subject per activity in X direction
+"tBodyGyromeanY" : Time Average of Body gyroscopic accelaration mean per subject per activity in Y direction
+"tBodyGyromeanZ" : Time Average of Body gyroscopic accelaration mean per subject per activity in Z direction
+"tBodyGyroJerkmeanX" : Time Average of Body gyroscopic jerk mean per subject per activity in X direction
+"tBodyGyroJerkmeanY" : Time Average of Body gyroscopic jerk mean per subject per activity in Y direction
+"tBodyGyroJerkmeanZ" : Time Average of Body gyroscopic jerk mean per subject per activity in Z direction
+"tBodyAccMagmean" : Time Average of accelaration magnitude mean per subject per activity 
+"tGravityAccMagmean" : Time Average of gravitational accelaration magnitude mean per subject per activity 
+"tBodyAccJerkMagmean" : Time Average of body accelaration jerk  magnitude mean per subject per activity 
+"tBodyGyroMagmean" : Time Average of body gyroscopic accelaration magnitude mean per subject per activity 
+"tBodyGyroJerkMagmean" : Time Average of body gyroscopic accelaration jerk magnitude mean per subject per activity 
+"fBodyAccmeanX" : Frequency Average of Body acceleration mean per subject per activity in X direction
+"fBodyAccmeanY" : Frequency Average of Body acceleration mean per subject per activity in Y direction
+"fBodyAccmeanZ" : Frequency Average of Body acceleration mean per subject per activity in Z direction
+"fBodyAccmeanFreqX" : Frequency Average of Body acceleration frequency mean per subject per activity in X direction
+"fBodyAccmeanFreqY" : Frequency Average of Body acceleration frequency mean per subject per activity in Y direction
+"fBodyAccmeanFreqZ" : Frequency Average of Body acceleration frequency mean per subject per activity in Z direction
+"fBodyAccJerkmeanX" : Frequency Average of Body acceleration jerk mean per subject per activity in X direction
+"fBodyAccJerkmeanY" : Frequency Average of Body acceleration jerk mean per subject per activity in Y direction
+"fBodyAccJerkmeanZ" : Frequency Average of Body acceleration jerk mean per subject per activity in Z direction
+"fBodyAccJerkmeanFreqX" : Frequency Average of Body acceleration jerk mean frequency per subject per activity in X direction
+"fBodyAccJerkmeanFreqY" : Frequency Average of Body acceleration jerk mean frequency per subject per activity in Y direction
+"fBodyAccJerkmeanFreqZ" : Frequency Average of Body acceleration jerk mean frequency per subject per activity in Z direction
+"fBodyGyromeanX" : Average fBodyGyromeanX per subject per activity
+"fBodyGyromeanY" : Average fBodyGyromeanY per subject per activity
+"fBodyGyromeanZ" : Average fBodyGyromeanZ per subject per activity
+"fBodyGyromeanFreqX" : Average fBodyGyromeanFreqX per subject per activity
+"fBodyGyromeanFreqY" : Average fBodyGyromeanFreqY per subject per activity
+"fBodyGyromeanFreqZ" : Average fBodyGyromeanFreqZ per subject per activity
+"fBodyAccMagmean" : Average fBodyAccMagmean per subject per activity
+"fBodyAccMagmeanFreq" : Average fBodyAccMagmeanFreq per subject per activity
+"fBodyBodyAccJerkMagmean" : Average fBodyBodyAccJerkMagmean per subject per activity
+"fBodyBodyAccJerkMagmeanFreq" : Average fBodyBodyAccJerkMagmeanFreq per subject per activity
+"fBodyBodyGyroMagmean" : Average fBodyBodyGyroMagmean per subject per activity
+"fBodyBodyGyroMagmeanFreq" : Average fBodyBodyGyroMagmeanFreq per subject per activity
+"fBodyBodyGyroJerkMagmean" : Average fBodyBodyGyroJerkMagmean per subject per activity
+"fBodyBodyGyroJerkMagmeanFreq" : Average fBodyBodyGyroJerkMagmeanFreq per subject per activity
+"tBodyAccstdX" : Average tBodyAccstdX per subject per activity
+"tBodyAccstdY" : Average tBodyAccstdY per subject per activity
+"tBodyAccstdZ" : Average tBodyAccstdZ per subject per activity
+"tGravityAccstdX" : Average tGravityAccstdX per subject per activity
+"tGravityAccstdY" : Average tGravityAccstdY per subject per activity
+"tGravityAccstdZ" : Average tGravityAccstdZ per subject per activity
+"tBodyAccJerkstdX" : Average tBodyAccJerkstdX per subject per activity
+"tBodyAccJerkstdY" : Average tBodyAccJerkstdY per subject per activity
+"tBodyAccJerkstdZ" : Average tBodyAccJerkstdZ per subject per activity
+"tBodyGyrostdX" : Average tBodyGyrostdX per subject per activity
+"tBodyGyrostdY" : Average tBodyGyrostdY per subject per activity
+"tBodyGyrostdZ" : Average tBodyGyrostdZ per subject per activity
+"tBodyGyroJerkstdX" : Average tBodyGyroJerkstdX per subject per activity
+"tBodyGyroJerkstdY" : Average tBodyGyroJerkstdY per subject per activity
+"tBodyGyroJerkstdZ" : Average tBodyGyroJerkstdZ per subject per activity
+"tBodyAccMagstd" : Average tBodyAccMagstd per subject per activity
+"tGravityAccMagstd" : Average tGravityAccMagstd per subject per activity
+"tBodyAccJerkMagstd" : Average tBodyAccJerkMagstd per subject per activity
+"tBodyGyroMagstd" : Average tBodyGyroMagstd per subject per activity
+"tBodyGyroJerkMagstd" : Average tBodyGyroJerkMagstd per subject per activity
+"fBodyAccstdX" : Average fBodyAccstdX per subject per activity
+"fBodyAccstdY" : Average fBodyAccstdY per subject per activity
+"fBodyAccstdZ" : Average fBodyAccstdZ per subject per activity
+"fBodyAccJerkstdX" : Average fBodyAccJerkstdX per subject per activity
+"fBodyAccJerkstdY" : Average fBodyAccJerkstdY per subject per activity
+"fBodyAccJerkstdZ" : Average fBodyAccJerkstdZ per subject per activity
+"fBodyGyrostdX" : Average fBodyGyrostdX per subject per activity
+"fBodyGyrostdY" : Average fBodyGyrostdY per subject per activity
+"fBodyGyrostdZ" : Average fBodyGyrostdZ per subject per activity
+"fBodyAccMagstd" : Average fBodyAccMagstd per subject per activity
+"fBodyBodyAccJerkMagstd" : Average fBodyBodyAccJerkMagstd per subject per activity
+"fBodyBodyGyroMagstd" : Average fBodyBodyGyroMagstd per subject per activity 
+"fBodyBodyGyroJerkMagstd" : Average fBodyBodyGyroJerkMagstd per subject per activity 
